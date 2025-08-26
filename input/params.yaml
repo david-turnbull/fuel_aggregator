@@ -1,0 +1,29 @@
+#Write the version of the EIA AEO report you wish to use
+eia_year: 2025 #Check the EIA website and find the most reason year in the database, that is the value to use
+
+#Version control: What version of the data are we using, we track numerically and they can be found in DataSet table
+version: '001' #Place within the quotation marks
+
+#Choose the schema version you wish to use; the lower the number, the more simple the representation. Default is 3_1
+schema_version:
+  #- 0
+  #- 1
+  #- 2
+  #- 3
+  - 3_1
+
+#periods to be studied
+periods:
+    #- 2021
+    - 2025
+    - 2030
+    - 2035
+    - 2040
+    - 2045
+    - 2050
+
+#Price for uranium, look in the latest NREL ATB electricity report and find the Fuel cost in $/MMBtu
+u_price: 1.09 
+
+#Price for biopower, look in the latest NREL ATB electricity report and find the Fuel cost in $/MMBtu
+b_price: 5.449635
